@@ -16,16 +16,21 @@ namespace Cursovoi_parse_csv_10_12_2023
     // открываем файл csv для чтения
     public class openFileCSV
     {
+        // список для добавления в базу данных
         public List<string> csv = new List<string>();
+        // строка для пердачи имя файла в текстбокс
         public string filenameGO;
+        // строка для считывания данных из файла
         public string line;
         public void openFileDialogAsync(ListBox lbFiles)
         {
+            // диалог для открытия файла
             OpenFileDialog openFileDialog = new OpenFileDialog();
+            // выбор нескольких файлов
             openFileDialog.Multiselect = true;
             openFileDialog.Filter = "Text files (*.csv)|*.csv|All files (*.*)|*.*";
+            // папка для открытия файла по умолчанию
             openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            string s = String.Empty;
             if (openFileDialog.ShowDialog() == true)
             {
                 lbFiles.Items.Add(System.IO.Path.GetFileName(openFileDialog.FileName));

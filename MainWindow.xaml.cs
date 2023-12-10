@@ -22,7 +22,9 @@ namespace Cursovoi_parse_csv_10_12_2023
     /// </summary>
     public partial class MainWindow : Window
     {
+        AddToDataBase addToData = new AddToDataBase();
         ListBox list = new ListBox();
+        string strings = string.Empty;
         public MainWindow()
         {
             InitializeComponent();
@@ -35,11 +37,19 @@ namespace Cursovoi_parse_csv_10_12_2023
             openFilecsv.openFileDialogAsync(list);
             lbFiles.Text = openFilecsv.filenameGO;
             lbTextFiles.Text = openFilecsv.line;
+            strings = openFilecsv.line;
+            addToData.metodAddDB(strings);
         }
 
         private void buttExit_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void buttAddStrDB_Click(object sender, RoutedEventArgs e)
+        {
+            
+            
         }
     }
 }
