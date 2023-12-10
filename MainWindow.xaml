@@ -34,23 +34,25 @@
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <TextBlock Text="Выбран файл" FontSize="14"
-                    Grid.Column="1" Grid.Row="0"
-                    Grid.ColumnSpan="4" Grid.RowSpan="1" Margin="10"/>
+                   Grid.Column="1" Grid.Row="0"
+                   Grid.ColumnSpan="4" Grid.RowSpan="1" Margin="10"/>
         <TextBlock Text="Содержимое файла" FontSize="14"
-             Grid.Column="1" Grid.Row="2"
-             Grid.ColumnSpan="4" Grid.RowSpan="1" Margin="10"/>
+                   Grid.Column="1" Grid.Row="2"
+                   Grid.ColumnSpan="4" Grid.RowSpan="1" Margin="10"/>
         <!--размещаем textbox для вывода загруженного имени файла-->
         <TextBox Name="lbFiles" 
-                 Grid.Column="1" Grid.Row="1"
+                 Grid.Column="0" Grid.Row="1"
                  Grid.ColumnSpan="4" Grid.RowSpan="1" Margin="10"/>
         <!--размещаем textbox для вывода загруженного имени файла-->
         <TextBox Name="lbTextFiles"  Margin="10"
-         Grid.Column="1" Grid.Row="3"
-         Grid.ColumnSpan="4" Grid.RowSpan="5"/>
+                 Grid.Column="0" Grid.Row="3"
+                 Grid.ColumnSpan="10" Grid.RowSpan="5" 
+                 HorizontalScrollBarVisibility="Visible" 
+                 VerticalScrollBarVisibility="Visible"/>
         <!--размещаем кнопку для загрузки файла-->
         <Button x:Name="buttOpenFileDialog"  Margin="10"
-                 Grid.Column="7" Grid.Row="8"
-                 Grid.ColumnSpan="2" Grid.RowSpan="1"
-                Content="загрузить файл" Click="buttOpenFileDialog_Click"/>
+                  Grid.Column="7" Grid.Row="8"
+                  Grid.ColumnSpan="2" Grid.RowSpan="1"
+                  Content="загрузить файл" Click="buttOpenFileDialog_Click"/>
     </Grid>
 </Window>

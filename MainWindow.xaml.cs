@@ -32,8 +32,9 @@ namespace Cursovoi_parse_csv_10_12_2023
         private void buttOpenFileDialog_Click(object sender, RoutedEventArgs e)
         {
             openFileCSV openFilecsv = new openFileCSV();
-            openFilecsv.openFileDialog(list);
+            openFilecsv.openFileDialogAsync(list);
             lbFiles.Text = openFilecsv.filenameGO;
+            lbTextFiles.Text = openFilecsv.line;
         }
     }
 }
