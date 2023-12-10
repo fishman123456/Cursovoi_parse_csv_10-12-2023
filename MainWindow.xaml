@@ -1,0 +1,56 @@
+﻿<Window x:Class="Cursovoi_parse_csv_10_12_2023.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cursovoi_parse_csv_10_12_2023"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <!--Размечаем строки 10шт  10-2-2023-->
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <!--Размечаем столбцы 10шт 10-2-2023-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Выбран файл" FontSize="14"
+                    Grid.Column="1" Grid.Row="0"
+                    Grid.ColumnSpan="4" Grid.RowSpan="1" Margin="10"/>
+        <TextBlock Text="Содержимое файла" FontSize="14"
+             Grid.Column="1" Grid.Row="2"
+             Grid.ColumnSpan="4" Grid.RowSpan="1" Margin="10"/>
+        <!--размещаем textbox для вывода загруженного имени файла-->
+        <TextBox Name="lbFiles" 
+                 Grid.Column="1" Grid.Row="1"
+                 Grid.ColumnSpan="4" Grid.RowSpan="1" Margin="10"/>
+        <!--размещаем textbox для вывода загруженного имени файла-->
+        <TextBox Name="lbTextFiles"  Margin="10"
+         Grid.Column="1" Grid.Row="3"
+         Grid.ColumnSpan="4" Grid.RowSpan="5"/>
+        <!--размещаем кнопку для загрузки файла-->
+        <Button x:Name="buttOpenFileDialog"  Margin="10"
+                 Grid.Column="7" Grid.Row="8"
+                 Grid.ColumnSpan="2" Grid.RowSpan="1"
+                Content="загрузить файл" Click="buttOpenFileDialog_Click"/>
+    </Grid>
+</Window>

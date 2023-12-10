@@ -1,0 +1,9 @@
+﻿<Application x:Class="Cursovoi_parse_csv_10_12_2023.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Cursovoi_parse_csv_10_12_2023"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
