@@ -36,5 +36,10 @@ namespace Cursovoi_parse_csv_10_12_2023
             lbFiles.Text = openFilecsv.filenameGO;
             lbTextFiles.Text = openFilecsv.line;
         }
+
+        private void buttExit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
