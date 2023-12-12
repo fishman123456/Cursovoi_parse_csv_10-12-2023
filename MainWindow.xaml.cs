@@ -28,7 +28,9 @@ namespace Cursovoi_parse_csv_10_12_2023
         public MainWindow()
         {
             InitializeComponent();
-           
+            CheckDateWork.CheckDate();
+
+
         }
         ObservableCollection<string> m_osstrProgress;  // To attach to the listbox.  
         private void buttOpenFileDialog_Click(object sender, RoutedEventArgs e)
