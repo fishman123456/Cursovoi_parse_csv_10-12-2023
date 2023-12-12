@@ -20,8 +20,10 @@ namespace Cursovoi_parse_csv_10_12_2023
             string connetionString = null;
             string sql = null;
 
-            // строка для соединения с базой данных
-            connetionString = @"Data Source = fishman\SQLEXPRESS;
+            // строка для соединения с базой данных 
+            // для работы Data Source = FISHMAN
+            // для дома Data Source = fishman\SQLEXPRESS
+            connetionString = @"Data Source = FISHMAN;
                                                 Initial Catalog = mytest_db;
                                                 Integrated Security = SSPI;
                                                 TrustServerCertificate = True";
@@ -55,8 +57,8 @@ namespace Cursovoi_parse_csv_10_12_2023
                         {
 
                             // получение и установка параметров для передачи в sql запрос
-                            cmd.Parameters.Add("@first", SqlDbType.NVarChar).Value = list[7];
-                            cmd.Parameters.Add("@last", SqlDbType.NVarChar).Value = list[8];
+                            cmd.Parameters.Add("@first", SqlDbType.NVarChar).Value = list[1];
+                            cmd.Parameters.Add("@last", SqlDbType.NVarChar).Value = list[2];
 
                             // Let's ask the db to execute the query
                             // Давайте попросим базу данных выполнить запрос
